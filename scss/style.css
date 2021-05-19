@@ -164,8 +164,6 @@ body {
   right: 0;
   width: 70%;
   height: 100%;
-  -webkit-animation: onLoadSelection 2s;
-          animation: onLoadSelection 2s;
 }
 
 .selection_about {
@@ -347,24 +345,6 @@ body {
   }
   to {
     width: 100%;
-  }
-}
-
-@-webkit-keyframes onLoadSelection {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 70%;
-  }
-}
-
-@keyframes onLoadSelection {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 70%;
   }
 }
 
