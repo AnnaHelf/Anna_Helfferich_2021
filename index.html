@@ -18,8 +18,8 @@
   <body>
     <!-- ANNA HELFFERICH -->
     <aside class="left_name flex flex-jc-c flex-ai-c flex-fd-c">
-      <h1 id="name"><span>A</span>nna</h1>
-      <h1 id="name"><span>H</span>elfferich</h1>
+      <h1 id="name">Anna</h1>
+      <h1 id="name">Helfferich</h1>
       <!-- PORTRAIT -->
       <div class="anna_portrait position">
         <video autoplay muted loop>
@@ -109,12 +109,15 @@
     <section id="myWork" class="position-f flex flex-ai-c flex-jc-c">
       <div class="work_prev flex flex-fd-c">
         <div class="work position-r">
-          <div class="work_title position text-c">
-            <h6>2020 / Photography_Portfolio_Website</h6>
+          <div id="photo" class="work_title position text-c">
+            <a href="#">
+              <h6>2020 / Photography_Portfolio_Website</h6>
+            </a>
           </div>
           <img src="./img/work/anna_01.jpg" alt="" />
           <img src="./img/work/anna_02.jpg" alt="" />
           <video
+            id="photo_vid"
             autoplay
             muted
             loop
@@ -125,13 +128,16 @@
         </div>
         <!-- TWO -->
         <div class="work position-r">
-          <div class="work_title position text-c">
-            <h6>2021 / Simple_site</h6>
+          <div id="simple" class="work_title position text-c">
+            <a href="#">
+              <h6>2021 / Simple_site</h6>
+            </a>
           </div>
           <img src="./img/work/simple_site_01.jpg" alt="" />
           <img src="./img/work/simple_site_02.jpg" alt="" />
           <img src="./img/work/simple_site_03.jpg" alt="" />
           <video
+            id="simple_vid"
             autoplay
             muted
             loop
@@ -141,11 +147,14 @@
         </div>
         <!-- THREE -->
         <div class="work position-r">
-          <div class="work_title position text-c">
-            <h6>2021 / Jenny_Nguyen_Website</h6>
+          <div id="jenny" class="work_title position text-c">
+            <a href="#">
+              <h6>2021 / Jenny_Nguyen_Website</h6>
+            </a>
           </div>
           <img src="./img/work/jenny_01.jpg" alt="" />
           <video
+            id="jenny_vid"
             autoplay
             muted
             loop
@@ -157,6 +166,11 @@
         </div>
       </div>
       <i id="close_work" class="fas fa-times position"></i>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact"></div>
     </section>
     <div class="cursor position"></div>
     <div class="lineOne position"></div>

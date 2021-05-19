@@ -153,11 +153,6 @@ body {
           animation: AnnaHelfferich 4s forwards;
 }
 
-.left_name h1 span {
-  -webkit-animation: colorA 5s ease-in-out infinite alternate;
-          animation: colorA 5s ease-in-out infinite alternate;
-}
-
 .selection {
   /* border: solid 1px $brighter_violet; */
   top: 0;
@@ -481,7 +476,6 @@ body {
 
 #myWork .work_prev .work {
   /*   border: solid 1px red; */
-  cursor: pointer;
   width: 100%;
   height: 100%;
   display: -ms-grid;
@@ -489,24 +483,34 @@ body {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: 5px;
+  opacity: 1;
 }
 
 #myWork .work_prev .work img {
   width: 100%;
-  opacity: 0;
+  opacity: 0.2;
 }
 
 #myWork .work_prev .work video {
   margin-top: -1.3rem;
-  opacity: 0;
+  opacity: 0.2;
 }
 
 #myWork .work_prev .work .work_title {
-  border: solid 1px #755d9e;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#myWork .work_prev .work .work_title a {
   width: 100%;
   color: #ece4fa;
-  font-size: 4rem;
+  font-size: 3rem;
   top: 3rem;
+  text-decoration: none;
+}
+
+#myWork .work_prev .work .work_title a:hover {
+  /*   color: #ac7ffa; */
 }
 
 #myWork #close_work {
@@ -523,5 +527,14 @@ body {
 
 #work_first {
   height: 100%;
+}
+
+#contact {
+  z-index: 10;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b0a9181), color-stop(#4d0f7788), color-stop(#3f115f81), color-stop(#3111476e), color-stop(#230f316c), color-stop(#17091c6c), to(rgba(0, 0, 0, 0.438)));
+  background-image: linear-gradient(#5b0a9181, #4d0f7788, #3f115f81, #3111476e, #230f316c, #17091c6c, rgba(0, 0, 0, 0.438));
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 /*# sourceMappingURL=style.css.map */

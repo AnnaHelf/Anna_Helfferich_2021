@@ -4,6 +4,7 @@
   margin-top: 120rem;
   transition: 1s ease-in-out;
   z-index: 10;
+
   background-image: linear-gradient(
     #5b0a9181,
     #4d0f7788,
@@ -24,26 +25,35 @@
     background-color: #000;
     .work {
       /*   border: solid 1px red; */
-      cursor: pointer;
+
       width: 100%;
       height: 100%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 5px;
+      opacity: 1;
       img {
         width: 100%;
-        opacity: 0;
+        opacity: 0.2;
       }
       video {
         margin-top: -1.3rem;
-        opacity: 0;
+        opacity: 0.2;
       }
       .work_title {
-        border: solid 1px $brighter_violet;
-        width: 100%;
-        color: #ece4fa;
-        font-size: 4rem;
-        top: 3rem;
+        cursor: pointer;
+        z-index: 10;
+        a {
+          width: 100%;
+          color: #ece4fa;
+          font-size: 3rem;
+          top: 3rem;
+
+          text-decoration: none;
+          &:hover {
+            /*   color: #ac7ffa; */
+          }
+        }
       }
     }
   }

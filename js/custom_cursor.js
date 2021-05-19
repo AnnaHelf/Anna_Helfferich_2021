@@ -37,30 +37,48 @@ selectionDiv.forEach((div) => {
 russian_about.addEventListener("mouseover", (e) => {
   e.target.style.opacity = "0";
   english_about.style.opacity = "1";
+  nameAnna.forEach((name) => {
+    name.style.display = "none";
+  });
 });
 english_about.addEventListener("mouseleave", (e) => {
   english_about.style.opacity = "";
   russian_about.style.opacity = "";
+  nameAnna.forEach((name) => {
+    name.style.display = "";
+  });
 });
 
 /* work */
 russian_work.addEventListener("mouseover", (e) => {
   e.target.style.opacity = "0";
   english_work.style.opacity = "1";
+  nameAnna.forEach((name) => {
+    name.style.display = "none";
+  });
 });
 english_work.addEventListener("mouseleave", (e) => {
   english_work.style.opacity = "";
   russian_work.style.opacity = "";
+  nameAnna.forEach((name) => {
+    name.style.display = "";
+  });
 });
 
 /* contact */
 russian_contact.addEventListener("mouseover", (e) => {
   e.target.style.opacity = "0";
   english_contact.style.opacity = "1";
+  nameAnna.forEach((name) => {
+    name.style.display = "none";
+  });
 });
 english_contact.addEventListener("mouseleave", (e) => {
   english_contact.style.opacity = "";
   russian_contact.style.opacity = "";
+  nameAnna.forEach((name) => {
+    name.style.display = "";
+  });
 });
 
 /* ANNA PORTRAIT */
