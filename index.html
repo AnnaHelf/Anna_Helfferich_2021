@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="scss/style.css" />
+
+    <title>Anna</title>
+  </head>
+  <body>
+    <!-- ANNA HELFFERICH -->
+    <aside class="left_name flex flex-jc-c flex-ai-c flex-fd-c">
+      <h1 id="name"><span>A</span>nna</h1>
+      <h1 id="name"><span>H</span>elfferich</h1>
+      <!-- PORTRAIT -->
+      <div class="anna_portrait position">
+        <video autoplay muted loop>
+          <source src="videos/portrait_color.mp4" />
+        </video>
+      </div>
+      <!-- WORK -->
+      <div class="anna_work position">
+        <video autoplay muted loop>
+          <source src="videos/work_color.mp4" />
+        </video>
+      </div>
+      <!-- CONTACT -->
+      <div class="anna_contact position">
+        <video autoplay muted loop>
+          <source src="videos/contact_color.mp4" />
+        </video>
+      </div>
+    </aside>
+    <!-- RIGHT SIDE -->
+    <main class="selection position flex flex-ai-c flex-jc-se">
+      <!-- ABOUT ME -->
+      <div id="translate" class="selection_about flex flex-ai-c flex-jc-c">
+        <div class="russian flex flex-ai-c flex-jc-c">
+          <h1 id="russian" class="about_russian">
+            обо <br />
+            мне
+          </h1>
+        </div>
+        <div class="english position flex flex-ai-c flex-jc-c">
+          <h1 id="english" class="about_english">
+            about <br />
+            me
+          </h1>
+        </div>
+      </div>
+      <!-- WORK -->
+      <div id="translate" class="selection_work flex flex-ai-c flex-jc-c">
+        <div class="russian flex flex-ai-c flex-jc-c">
+          <h1 id="russian" class="work_russian">
+            мои <br />
+            рабо <br />
+            ты
+          </h1>
+        </div>
+        <div class="english position flex flex-ai-c flex-jc-c">
+          <h1 id="english" class="work_english">
+            my <br />
+            work
+          </h1>
+        </div>
+      </div>
+      <!-- CONTACT -->
+      <div id="translate" class="selection_contact flex flex-ai-c flex-jc-c">
+        <div class="russian flex flex-ai-c flex-jc-c">
+          <h1 id="russian" class="contact_russian">
+            кон <br />
+            такт
+          </h1>
+        </div>
+        <div class="english position flex flex-ai-c flex-jc-c">
+          <h1 id="english" class="contact_english">
+            con <br />
+            tact
+          </h1>
+        </div>
+      </div>
+    </main>
+    <!-- ABOUT ME -->
+    <section id="aboutMe" class="position-f flex flex-ai-c flex-jc-c">
+      <div class="aboutMe position-r flex flex-ai-c flex-jc-se">
+        <div class="portrait">
+          <img src="./img/1.jpg" alt="" />
+        </div>
+        <div class="aboutMe_info">
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+            necessitatibus, totam quas molestias ipsam animi beatae deleniti?
+            Error, itaque corporis!
+          </h2>
+        </div>
+        <i id="close" class="fas fa-times position"></i>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="myWork" class="position-f flex flex-ai-c flex-jc-c">
+      <div class="work_acc flex flex-fd-c">
+        <div class="work_one">
+          <div class="work_title">
+            <h6 id="trigger">2020 / Photography_Portfolio_Website</h6>
+          </div>
+          <div id="work_first" class="work_info"></div>
+        </div>
+        <div class="work_one">
+          <div class="work_title">
+            <h6 id="trigger">2021 / Simple_site</h6>
+          </div>
+          <div class="work_info"></div>
+        </div>
+        <div class="work_one">
+          <div class="work_title">
+            <h6 id="trigger">2021 / Jenny_Nguyen_Website</h6>
+          </div>
+          <div class="work_info"></div>
+        </div>
+      </div>
+      <i id="close_work" class="fas fa-times position"></i>
+    </section>
+    <div class="cursor position"></div>
+    <div class="lineOne position"></div>
+    <div class="lineTwo position"></div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/custom_cursor.js"></script>
+    <script src="js/aboutMe.js"></script>
+    <script src="js/work.js"></script>
+  </body>
+</html>
