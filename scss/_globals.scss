@@ -1,0 +1,103 @@
+@import "_variables";
+/* === Small CSS Reset === */
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+
+  &-ai-c {
+    align-items: center;
+  }
+  &-ai-s {
+    align-items: stretch;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-fe {
+    justify-content: flex-end;
+  }
+  &-jc-fs {
+    justify-content: flex-start;
+  }
+
+  &-fd-c {
+    flex-direction: column;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-se {
+    justify-content: space-evenly;
+  }
+}
+
+/* FLOAT */
+
+.float {
+  float: left;
+
+  &-r {
+    float: right;
+  }
+}
+
+/* POSITIONING */
+.position {
+  position: absolute;
+
+  &-r {
+    position: relative;
+  }
+  &-f {
+    position: fixed;
+  }
+}
+
+/* TEXT-ALIGN */
+.text-c {
+  text-align: center;
+}
+
+/* HEIGHT */
+.h-100 {
+  height: 100%;
+}
+/* BOTTOM */
+.bottom {
+  bottom: 0;
+}
+/* TOP */
+.top {
+  top: 0;
+}
+
+/* BACKGROUND */
+.bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: $main_font;
+  background-color: rgb(0, 0, 0);
+  /*   background-image: linear-gradient(
+    #5b0a91,
+    #4d0f77,
+    #3f115f,
+    #311147,
+    #230f31,
+    #17091c,
+    #000
+  ); */
+}
