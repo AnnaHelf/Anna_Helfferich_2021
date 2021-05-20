@@ -297,14 +297,12 @@ body {
 .anna_contact {
   display: none;
   height: 100%;
-}
-
-.anna_contact video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.5;
+  /*  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  } */
 }
 
 .lineOne {
@@ -411,8 +409,8 @@ body {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   z-index: 10;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b0a9181), color-stop(#4d0f7788), color-stop(#3f115f81), color-stop(#3111476e), color-stop(#230f316c), color-stop(#17091c6c), to(rgba(0, 0, 0, 0.438)));
-  background-image: linear-gradient(#5b0a9181, #4d0f7788, #3f115f81, #3111476e, #230f316c, #17091c6c, rgba(0, 0, 0, 0.438));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b0a91f8), color-stop(#4d0f77f6), color-stop(#3f115ff6), color-stop(#3111476e), color-stop(#230f316c), color-stop(#17091c6c), to(rgba(0, 0, 0, 0.438)));
+  background-image: linear-gradient(#5b0a91f8, #4d0f77f6, #3f115ff6, #3111476e, #230f316c, #17091c6c, rgba(0, 0, 0, 0.438));
   width: 100%;
   height: 100%;
   top: 0;
@@ -428,8 +426,8 @@ body {
 
 #aboutMe .aboutMe {
   cursor: default;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   background-color: #000;
 }
 
@@ -459,8 +457,8 @@ body {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   z-index: 10;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b0a9181), color-stop(#4d0f7788), color-stop(#3f115f81), color-stop(#3111476e), color-stop(#230f316c), color-stop(#17091c6c), to(rgba(0, 0, 0, 0.438)));
-  background-image: linear-gradient(#5b0a9181, #4d0f7788, #3f115f81, #3111476e, #230f316c, #17091c6c, rgba(0, 0, 0, 0.438));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b0a91f8), color-stop(#4d0f77f6), color-stop(#3f115ff6), color-stop(#3111476e), color-stop(#230f316c), color-stop(#17091c6c), to(rgba(0, 0, 0, 0.438)));
+  background-image: linear-gradient(#5b0a91f8, #4d0f77f6, #3f115ff6, #3111476e, #230f316c, #17091c6c, rgba(0, 0, 0, 0.438));
   width: 100%;
   height: 100%;
   top: 0;
@@ -469,8 +467,8 @@ body {
 #myWork .work_prev {
   overflow: hidden;
   cursor: default;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   background-color: #000;
 }
 
@@ -516,8 +514,8 @@ body {
 #myWork #close_work {
   color: #8a7ba5;
   font-size: 3rem;
-  top: 2rem;
-  right: 5rem;
+  top: 4rem;
+  right: 8rem;
   cursor: pointer;
 }
 
@@ -530,11 +528,84 @@ body {
 }
 
 #contact {
+  margin-left: -120rem;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   z-index: 10;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b0a9181), color-stop(#4d0f7788), color-stop(#3f115f81), color-stop(#3111476e), color-stop(#230f316c), color-stop(#17091c6c), to(rgba(0, 0, 0, 0.438)));
-  background-image: linear-gradient(#5b0a9181, #4d0f7788, #3f115f81, #3111476e, #230f316c, #17091c6c, rgba(0, 0, 0, 0.438));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b0a91f8), color-stop(#4d0f77f6), color-stop(#3f115ff6), color-stop(#3111476e), color-stop(#230f316c), color-stop(#17091c6c), to(rgba(0, 0, 0, 0.438)));
+  background-image: linear-gradient(#5b0a91f8, #4d0f77f6, #3f115ff6, #3111476e, #230f316c, #17091c6c, rgba(0, 0, 0, 0.438));
   width: 100%;
   height: 100%;
   top: 0;
+}
+
+#contact .contact {
+  cursor: default;
+  width: 90%;
+  height: 90%;
+  /*     background-color: #000; */
+}
+
+/* CONTACT */
+.contact_me {
+  border: solid 1px #d5c2f6;
+  background-color: rgba(17, 0, 29, 0.787);
+  width: 80%;
+  height: 60%;
+}
+
+.contact_me-nameEtc {
+  /*  background-color: $pastell_violet; */
+  width: 100%;
+  height: 5rem;
+}
+
+.contact_me-message {
+  /*  background-color: $brighter_violet; */
+  width: 100%;
+  height: 30rem;
+}
+
+form label {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+form input {
+  width: 15rem;
+  height: 2rem;
+  text-align: center;
+}
+
+form input:active {
+  border: none;
+}
+
+textarea {
+  width: 50%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin: 1.5rem;
+  letter-spacing: 5px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #d5c2f6;
+}
+
+#close_contact {
+  top: 10rem;
+  right: 10rem;
+  color: #8a7ba5;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+#close_contact:hover {
+  color: #ece4fa;
 }
 /*# sourceMappingURL=style.css.map */
