@@ -2,12 +2,6 @@
 
 let cursor = document.querySelector(".cursor");
 const selectionDiv = document.querySelectorAll("#translate");
-const russian_about = document.querySelector(".about_russian");
-const english_about = document.querySelector(".about_english");
-const russian_work = document.querySelector(".work_russian");
-const english_work = document.querySelector(".work_english");
-const russian_contact = document.querySelector(".contact_russian");
-const english_contact = document.querySelector(".contact_english");
 const nameAnna = document.querySelectorAll("#name");
 
 /* CURSOR MOVE */
@@ -54,77 +48,15 @@ function displayNoneAnna() {
   });
 }
 
-/* REFRESH ABOUT */
-let timer;
-function refreshAbout() {
-  russian_about.style.opacity = "";
-  english_about.style.opacity = "";
-  document.querySelector(".anna_portrait").style.display = "";
-  displayAnna();
-}
-
-function startRefreshAbout() {
-  timer = setTimeout(function () {
-    refreshAbout();
-  }, 1000);
-}
-
-russian_about.addEventListener("mouseover", (e) => {
-  e.target.style.opacity = "0";
-  english_about.style.opacity = "1";
-  document.querySelector(".anna_portrait").style.display = "block";
-  displayNoneAnna();
+/* ABOUT ME TRANSLATION */
+const about_russian = document.querySelector(".about_russian");
+const about_english = document.querySelector(".about_english");
+about_russian.addEventListener("mouseover", function () {
+  console.log("hover over h1");
+  about_russian.style.opacity = "0";
 });
 
-english_about.addEventListener("mouseleave", (e) => {
-  startRefreshAbout();
-});
-
-/* REFRESH WORK */
-function refreshWork() {
-  russian_work.style.opacity = "";
-  english_work.style.opacity = "";
-  document.querySelector(".anna_work").style.display = "";
-  displayAnna();
-}
-
-function startRefreshWork() {
-  timer = setTimeout(function () {
-    refreshWork();
-  }, 1000);
-}
-
-russian_work.addEventListener("mouseover", (e) => {
-  e.target.style.opacity = "0";
-  english_work.style.opacity = "1";
-  document.querySelector(".anna_work").style.display = "block";
-  displayNoneAnna();
-});
-
-english_work.addEventListener("mouseleave", (e) => {
-  startRefreshWork();
-});
-
-/* REFRESH CONTACT */
-function refreshContact() {
-  russian_contact.style.opacity = "";
-  english_contact.style.opacity = "";
-  displayAnna();
-}
-
-function startRefreshContact() {
-  timer = setTimeout(function () {
-    refreshContact();
-  }, 1000);
-}
-
-russian_contact.addEventListener("mouseover", (e) => {
-  e.target.style.opacity = "0";
-  english_contact.style.opacity = "1";
-  document.querySelector(".anna_contact").style.display = "block";
-  displayNoneAnna();
-});
-
-english_contact.addEventListener("mouseleave", (e) => {
-  startRefreshContact();
+about_russian.addEventListener("mouseleave", function () {
+  console.log("left about");
+  about_russian.style.opacity = "";
 });
