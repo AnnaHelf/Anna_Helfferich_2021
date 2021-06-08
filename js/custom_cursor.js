@@ -51,12 +51,53 @@ function displayNoneAnna() {
 /* ABOUT ME TRANSLATION */
 const about_russian = document.querySelector(".about_russian");
 const about_english = document.querySelector(".about_english");
+
 about_russian.addEventListener("mouseover", function () {
   console.log("hover over h1");
   about_russian.style.opacity = "0";
+  document.querySelector(".anna_portrait").style.display = "block";
+  displayNoneAnna();
 });
 
 about_russian.addEventListener("mouseleave", function () {
   console.log("left about");
   about_russian.style.opacity = "";
+  document.querySelector(".anna_portrait").style.display = "";
+  displayAnna();
+});
+
+/* MY WORK TRANSLATION */
+const work_russian = document.querySelector(".work_russian");
+const work_english = document.querySelector(".work_english");
+
+work_russian.addEventListener("mouseover", function () {
+  console.log("hover over h1");
+  work_russian.style.opacity = "0";
+  document.querySelector(".anna_work").style.display = "block";
+  displayNoneAnna();
+});
+
+work_russian.addEventListener("mouseleave", function () {
+  console.log("left about");
+  work_russian.style.opacity = "";
+  document.querySelector(".anna_work").style.display = "";
+  displayAnna();
+});
+
+/* CONTACT */
+const contact_russian = document.querySelector(".contact_russian");
+const contact_english = document.querySelector(".contact_english");
+
+contact_russian.addEventListener("mouseover", function () {
+  console.log("hover over h1");
+  contact_russian.style.opacity = "0";
+  document.querySelector(".anna_contact").style.display = "block";
+  displayNoneAnna();
+});
+
+contact_russian.addEventListener("mouseleave", function () {
+  console.log("left about");
+  contact_russian.style.opacity = "";
+  document.querySelector(".anna_contact").style.display = "";
+  displayAnna();
 });
