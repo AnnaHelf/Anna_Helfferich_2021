@@ -1,8 +1,8 @@
 const aboutMe = document.querySelector("#aboutMe");
-const divAboutMe = document.querySelector(".selection_about");
+const aboutTrigger = document.querySelector(".about_russian");
 const close = document.querySelector("#close");
 
-divAboutMe.addEventListener("click", (e) => {
+aboutTrigger.addEventListener("click", (e) => {
   console.log("click");
   aboutMe.style.marginLeft = "0";
 });

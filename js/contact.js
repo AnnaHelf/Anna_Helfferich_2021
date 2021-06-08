@@ -1,5 +1,5 @@
 const contact = document.querySelector("#contact");
-const contactTrigger = document.querySelector(".selection_contact");
+const contactTrigger = document.querySelector(".contact_russian");
 const closeContact = document.querySelector("#close_contact");
 
 contactTrigger.addEventListener("click", (e) => {

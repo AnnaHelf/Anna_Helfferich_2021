@@ -1,12 +1,11 @@
 const closeWork = document.querySelector("#close_work");
 const divWork = document.querySelector("#myWork");
-const workTrigger = document
-  .querySelector(".selection_work")
+const workTrigger = document.querySelector(".work_russian");
 
-  .addEventListener("click", (e) => {
-    console.log("click");
-    divWork.style.marginTop = "0";
-  });
+workTrigger.addEventListener("click", (e) => {
+  console.log("click");
+  divWork.style.marginTop = "0";
+});
 
 closeWork.addEventListener("click", (e) => {
   divWork.style.marginTop = "";
