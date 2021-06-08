@@ -175,14 +175,14 @@ body {
 }
 
 .selection_about h1.about_russian {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   padding: 50px;
   font-size: 6rem;
   color: #d5c2f6;
 }
 
 .selection_about h1.about_english {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   padding: 50px;
   font-size: 5rem;
   color: #000;
@@ -203,13 +203,13 @@ body {
 }
 
 .selection_work h1.work_russian {
-  border: solid 1px yellow;
+  /*    border: solid 1px yellow; */
   font-size: 5rem;
   color: #d5c2f6;
 }
 
 .selection_work h1.work_english {
-  border: solid 1px yellow;
+  /*    border: solid 1px yellow; */
   font-size: 5rem;
   color: #000;
   opacity: 0;
@@ -229,14 +229,14 @@ body {
 }
 
 .selection_contact h1.contact_russian {
-  border: solid 1px yellow;
+  /*   border: solid 1px yellow; */
   font-size: 5rem;
   padding: 2rem;
   color: #d5c2f6;
 }
 
 .selection_contact h1.contact_english {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   font-size: 5rem;
   color: #000;
   opacity: 0;
